@@ -1,0 +1,14 @@
+name: 'Terraform'
+
+  
+on:
+  workflow_dispatch:
+    inputs:
+      infra_env:
+        description: 'Environment Name'
+        required: true
+        default: 'provide one (sandbox/nonprod/prod)'
+      add_adgroup:
+        description: 'Want to add ad group to local Admin'
+        required: true
+        default: 'provide one (yes/no)'
